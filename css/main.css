@@ -1,0 +1,210 @@
+
+main {
+  width: 1300px;
+  margin: 0 auto;
+  min-width: 900px;
+  min-height: 900px;
+  padding-bottom: 10vh;
+}
+
+.fon {
+  position: absolute;
+  width: 100vw;
+  height: 100vw;
+  opacity: 8%;
+  z-index: 99;
+}
+
+.planeta {
+  position: absolute;
+  z-index: 98;
+}
+
+.ramka {
+  position: absolute;
+  width: 70vw;
+  height: 50vw;
+  margin-top: 3vw;
+  border: 1px solid gray;
+  z-index: 100;
+}
+
+.krug {
+  position: absolute;
+  width: 100vw;
+  height: 100vw;
+  z-index: 97;
+}
+
+.krug2 {
+  position: absolute;
+  width: 100vw;
+  height: 100vw;
+  z-index: 96;
+}
+
+.sputnik {
+  position: absolute;
+  width: 100vw;
+  height: 100vw;
+  z-index: 96;
+}
+
+.luna {
+  position: absolute;
+  width: 100vw;
+  height: 100vw;
+  z-index: 96;
+}
+
+.cube {
+  position: absolute;
+  width: 2.7vw;
+  height: 2.7vw;
+  margin: 32vw 23vw;
+  border: 3px solid black;
+  z-index: 96;
+}
+
+.cube2 {
+  position: absolute;
+  width: 0.7vw;
+  height: 0.7vw;
+  margin: 31vw 22vw;
+  border: 2px solid black;
+  z-index: 96;
+}
+
+.line {
+  position: absolute;
+  width: 100vw;
+  height: 100vw;
+  z-index: 95;
+}
+
+.aura {
+  position: absolute;
+  width: 100vw;
+  height: 100vw;
+  opacity: 90%;
+  z-index: 95;
+}
+
+.sfera {
+  position: absolute;
+  width: 100vw;
+  height: 100vw;
+  z-index: 95;
+}
+/*
+.linev {
+  position: absolute;
+  width: 10vw;
+  margin: 28.3vw 14.7vw;
+  border: 1px solid black;
+  transform: rotate(-37deg);
+  z-index: 94;
+}
+
+.linen {
+  position: absolute;
+  width: 10vw;
+  margin: 28vw 14.7vw;
+  border: 1px solid black;
+  transform: rotate(-37deg);
+  z-index: 93;
+}
+*/
+
+.lychi {
+  position: absolute;
+  width: 100vw;
+  height: 100vw;
+  z-index: 94;
+}
+
+.poloski {
+  position: absolute;
+  width: 10vw;
+  margin: 22vw 15vw;
+  border: 1px dashed black;
+  transform: rotate(40deg);
+  z-index: 93;
+}
+
+.krestik {
+  position: absolute;
+  width: 100vw;
+  height: 100vw;
+  z-index: 92;
+}
+
+.krestik2 {
+  position: absolute;
+  width: 100vw;
+  height: 100vw;
+  z-index: 91;
+}
+
+.curve {
+  position: absolute;
+  width: 100vw;
+  height: 100vw;
+  z-index: 90;
+}
+
+.krugspalochkami {
+  position: absolute;
+  width: 100vw;
+  height: 100vw;
+  z-index: 89;
+}
+
+.palochka1 {
+  position: absolute;
+  width: 100vw;
+  height: 100vw;
+  z-index: 88;
+}
+
+.palochka2 {
+  position: absolute;
+  width: 100vw;
+  height: 100vw;
+  z-index: 87;
+}
+
+.telo {
+  position: absolute;
+  width: 100vw;
+  height: 100vw;
+  z-index: 86;
+}
+
+.kvadrat {
+  position: absolute;
+  width: 100vw;
+  height: 100vw;
+  z-index: 86;
+}
+
+.verhnyaaura {
+  position: absolute;
+  width: 100vw;
+  height: 100vw;
+  z-index: 85;
+}
+
+.srednyaaura {
+  position: absolute;
+  width: 100vw;
+  height: 100vw;
+  z-index: 84;
+}
+
+.malenkayaaura {
+  position: absolute;
+  width: 100vw;
+  height: 100vw;
+  z-index: 83;
+}
