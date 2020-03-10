@@ -1,210 +1,285 @@
+@import url('https://fonts.googleapis.com/css?family=Mukta+Vaani:300,400&display=swap');
 
 main {
   width: 1300px;
-  margin: 0 auto;
-  min-width: 900px;
+  margin: 100px 300px;
+  min-width: 600px;
   min-height: 900px;
   padding-bottom: 10vh;
-}
-
-.fon {
-  position: absolute;
-  width: 100vw;
-  height: 100vw;
-  opacity: 8%;
-  z-index: 99;
-}
-
-.planeta {
-  position: absolute;
-  z-index: 98;
+  font-family: 'Mukta Vaani', sans-serif;
 }
 
 .ramka {
   position: absolute;
-  width: 70vw;
-  height: 50vw;
-  margin-top: 3vw;
+  width: 850px;
+  height: 950px;
+  margin-top: 50px;
   border: 1px solid gray;
   z-index: 100;
 }
 
-.krug {
+.planet {
   position: absolute;
-  width: 100vw;
-  height: 100vw;
-  z-index: 97;
-}
-
-.krug2 {
-  position: absolute;
-  width: 100vw;
-  height: 100vw;
-  z-index: 96;
-}
-
-.sputnik {
-  position: absolute;
-  width: 100vw;
-  height: 100vw;
-  z-index: 96;
-}
-
-.luna {
-  position: absolute;
-  width: 100vw;
-  height: 100vw;
-  z-index: 96;
+  width: 20vw;
+  left: 25%;
+  z-index: 75;
 }
 
 .cube {
   position: absolute;
-  width: 2.7vw;
-  height: 2.7vw;
-  margin: 32vw 23vw;
-  border: 3px solid black;
-  z-index: 96;
+  width: 40px;
+  height: 40px;
+  border: 2px solid black;
+  margin: 690px 530px;
+  z-index: 97;
 }
 
 .cube2 {
   position: absolute;
-  width: 0.7vw;
-  height: 0.7vw;
-  margin: 31vw 22vw;
-  border: 2px solid black;
+  width: 15px;
+  height: 15px;
+  border: 1px solid black;
+  margin: 670px 510px;
   z-index: 96;
 }
 
-.line {
+.lineleft {
   position: absolute;
-  width: 100vw;
-  height: 100vw;
+  width: 60px;
+  border: 0.5px solid black;
+  transform: rotate(30deg);
+  margin: 260px 390px;
   z-index: 95;
 }
 
-.aura {
+.lineright {
   position: absolute;
-  width: 100vw;
-  height: 100vw;
-  opacity: 90%;
-  z-index: 95;
-}
-
-.sfera {
-  position: absolute;
-  width: 100vw;
-  height: 100vw;
-  z-index: 95;
-}
-/*
-.linev {
-  position: absolute;
-  width: 10vw;
-  margin: 28.3vw 14.7vw;
-  border: 1px solid black;
-  transform: rotate(-37deg);
+  width: 70px;
+  border: 0.5px solid black;
+  transform: rotate(-50deg);
+  margin: 260px 360px;
   z-index: 94;
 }
 
-.linen {
+.circle {
   position: absolute;
-  width: 10vw;
-  margin: 28vw 14.7vw;
+  width: 10px;
+  height: 10px;
+  border-radius: 50px;
+  background-color: black;
+  margin: 265px 400px;
+  z-index: 93;
+}
+
+.aura3 {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
   border: 1px solid black;
-  transform: rotate(-37deg);
-  z-index: 93;
-}
-*/
-
-.lychi {
-  position: absolute;
-  width: 100vw;
-  height: 100vw;
-  z-index: 94;
-}
-
-.poloski {
-  position: absolute;
-  width: 10vw;
-  margin: 22vw 15vw;
-  border: 1px dashed black;
-  transform: rotate(40deg);
-  z-index: 93;
-}
-
-.krestik {
-  position: absolute;
-  width: 100vw;
-  height: 100vw;
+  margin: 250px 280px;
+  cursor: pointer;
   z-index: 92;
 }
 
-.krestik2 {
+.aura2 {
   position: absolute;
-  width: 100vw;
-  height: 100vw;
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  border: 1px solid black;
+  margin: 260px 290px;
+  cursor: pointer;
   z-index: 91;
+}
+
+.aura1 {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 10px;
+  border: 1px solid black;
+  margin: 270px 300px;
+  cursor: pointer;
+  z-index: 89;
+}
+
+.krug1 {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  border: 1px solid black;
+  margin: 870px 620px;
+  z-index: 88;
+}
+
+.krug2 {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  border: 1px solid black;
+  margin: 170px 550px;
+  z-index: 87;
+}
+
+.curvedashed {
+  position: absolute;
+  width: 120px;
+  border: 0.5px dashed black;
+  transform: rotate(35deg);
+  margin: 460px 490px;
+  z-index: 86;
 }
 
 .curve {
   position: absolute;
-  width: 100vw;
-  height: 100vw;
-  z-index: 90;
+  z-index: 75;
 }
 
-.krugspalochkami {
+.littlecube {
   position: absolute;
-  width: 100vw;
-  height: 100vw;
-  z-index: 89;
-}
-
-.palochka1 {
-  position: absolute;
-  width: 100vw;
-  height: 100vw;
-  z-index: 88;
-}
-
-.palochka2 {
-  position: absolute;
-  width: 100vw;
-  height: 100vw;
-  z-index: 87;
-}
-
-.telo {
-  position: absolute;
-  width: 100vw;
-  height: 100vw;
-  z-index: 86;
-}
-
-.kvadrat {
-  position: absolute;
-  width: 100vw;
-  height: 100vw;
-  z-index: 86;
-}
-
-.verhnyaaura {
-  position: absolute;
-  width: 100vw;
-  height: 100vw;
+  width: 10px;
+  height: 10px;
+  border: 1px solid black;
+  margin: 550px 410px;
   z-index: 85;
 }
 
-.srednyaaura {
+.kletka {
   position: absolute;
-  width: 100vw;
-  height: 100vw;
+  opacity: 40%;
   z-index: 84;
 }
 
-.malenkayaaura {
+.moon {
   position: absolute;
-  width: 100vw;
-  height: 100vw;
+  z-index: 75;
+}
+
+.krivaya {
+  position: absolute;
+  z-index: 75;
+}
+
+.ministar {
+  position: absolute;
+  width: 15px;
+  border: 0.5px solid black;
+  margin: 300px 1000px;
+  left: 1px;
   z-index: 83;
+}
+
+.ministar:after {
+  content: "";
+  position: absolute;
+  width: 15px;
+  border: 0.5px solid black;
+  transform: rotate(90deg);
+  z-index: 82;
+}
+
+/*
+.krivaya {
+  position: absolute;
+  width: 15px;
+  border: 1px solid black;
+  margin: 660px 200px;
+  transform: rotate(90deg);
+  z-index: 83;
+}
+
+.krivaya:after {
+  content: "";
+  position: absolute;
+  width: 55px;
+  border: 1px solid black;
+  top: 27px;
+  right: -30px;
+  transform: rotate(90deg);
+  z-index: 82;
+}
+
+.krivaya2 {
+  position: absolute;
+  width: 37px;
+  border: 1px solid black;
+  margin: 650px 171px;
+  z-index: 82;
+}
+
+.krivaya2:after {
+  content: "";
+  width: 17px;
+  right: 29px;
+  bottom: 7px;
+  position: absolute;
+  border: 1px solid black;
+  transform: rotate(90deg);
+  z-index: 82;
+}
+*/
+
+
+.ministar2 {
+  position: absolute;
+  width: 20px;
+  border: 0.5px solid black;
+  margin: 500px 450px;
+  left: 1px;
+  z-index: 81;
+}
+
+.ministar2:after {
+  content: "";
+  position: absolute;
+  width: 20px;
+  border: 0.5px solid black;
+  transform: rotate(90deg);
+  z-index: 81;
+}
+
+.fon {
+  position: absolute;
+  opacity: 8%;
+  z-index: 80;
+}
+
+.podzagolovok {
+  position: absolute;
+  color: black;
+  top: 155px;
+  left: 350px;
+  font-size: 35px;
+  z-index: 79;
+}
+
+.zagolovok {
+  position: absolute;
+  top: 37px;
+  color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  font-size: 125px;
+  z-index: 78;
+}
+
+.cost {
+  position: absolute;
+  color: white;
+  margin: 950px 500px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  font-size: 30px;
+  z-index: 77;
+}
+
+.info {
+  position: absolute;
+  color: black;
+  margin: 500px 960px;
+  font-size: 25px;
+  z-index: 76;
 }

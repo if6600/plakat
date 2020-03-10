@@ -1,0 +1,9 @@
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 280.5 255.4" style="enable-background:new 0 0 280.5 255.4;" xml:space="preserve">
+<style type="text/css">
+	.planet{fill:#FFFFFF;stroke:#000000;stroke-width:3;stroke-miterlimit:10;}
+</style>
+<path class="planet" d="M27.3,54.3c0,0,31-48.3,80.4-48.3S189.3,21,222.7,52S272,147.3,272.1,164c0.1,36.9-10.3,53.4-38.5,70.7
+	c-28.2,17.2-64.9,12.6-80.4,8.6s-80.6-24.1-97.7-39.1c-6.1-5.3-34.9-20.5-45.2-58.9c-4.6-17-4.2-34.9,0.5-51.8
+	C14.1,81.6,19.5,65.8,27.3,54.3z"/>
+</svg>
