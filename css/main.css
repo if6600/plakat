@@ -20,6 +20,7 @@ main {
 
 .planet {
   position: absolute;
+  top: 35%;
   width: 20vw;
   left: 25%;
   z-index: 75;
@@ -180,48 +181,6 @@ main {
   transform: rotate(90deg);
   z-index: 82;
 }
-
-/*
-.krivaya {
-  position: absolute;
-  width: 15px;
-  border: 1px solid black;
-  margin: 660px 200px;
-  transform: rotate(90deg);
-  z-index: 83;
-}
-
-.krivaya:after {
-  content: "";
-  position: absolute;
-  width: 55px;
-  border: 1px solid black;
-  top: 27px;
-  right: -30px;
-  transform: rotate(90deg);
-  z-index: 82;
-}
-
-.krivaya2 {
-  position: absolute;
-  width: 37px;
-  border: 1px solid black;
-  margin: 650px 171px;
-  z-index: 82;
-}
-
-.krivaya2:after {
-  content: "";
-  width: 17px;
-  right: 29px;
-  bottom: 7px;
-  position: absolute;
-  border: 1px solid black;
-  transform: rotate(90deg);
-  z-index: 82;
-}
-*/
-
 
 .ministar2 {
   position: absolute;

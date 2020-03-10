@@ -28,5 +28,3 @@ let auraAnimation03 = anime({
   auraAnimation03.onmouseenter = function(e) {
     e.target.style.border = '1px solid red'
   }
-
-  document.body.append(auraAnimation03)
