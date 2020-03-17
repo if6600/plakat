@@ -11,6 +11,63 @@ main {
   margin-top: -54px;
 }
 
+.miniplanet {
+  position: absolute;
+  width: 30px;
+  height: 20px;
+  left: 900px;
+  top: 100px;
+  border: 2px solid black;
+  z-index: 75;
+  cursor: pointer;
+}
+
+.miniplanet:before {
+  content: '';
+  position: absolute;
+  display: block;
+  top: -100px;
+  left: -100px;
+  right: -100px;
+  bottom: -50px;
+}
+
+.krushochek {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  left: 900px;
+  top: 600px;
+  border-radius: 100px;
+  border: 2px solid black;
+  z-index: 75;
+  cursor: pointer;
+}
+
+.krushochek2 {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  left: 910px;
+  top: 618px;
+  border-radius: 100px;
+  border: 2px solid black;
+  z-index: 75;
+  cursor: pointer;
+}
+
+.krushochek3 {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  left: 870px;
+  top: 630px;
+  border-radius: 100px;
+  background-color: black;
+  z-index: 75;
+  cursor: pointer;
+}
+
 .plakat {
   position: relative;
   width: 800px;
@@ -398,7 +455,7 @@ div.plakat::after {
 .podzagolovok {
   color: black;
   font-size: 35px;
-  line-height: 0;
+  line-height: 40px;
   padding-left: 150px;
 }
 

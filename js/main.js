@@ -188,6 +188,61 @@ let littlecubeAnimation = anime({
   autoplay: false
 });
 
+let miniplaneteAnimation = anime({
+  targets: '.miniplanet',
+  width: '10%',
+  rotate: '-360deg',
+  scale: {
+    value: 0.5,
+    duration: 1000,
+    delay: 200,
+    easing: 'easeInOutQuart'
+  },
+  easing: 'easeInOutQuad',
+  duration: 1200,
+  direction: 'alternate',
+  loop: true,
+  autoplay: false
+});
+
+let threestarAnimation = anime({
+  targets: '#krushochek2',
+  scale: {
+    value: 2,
+    duration: 700,
+    delay: 200,
+    easing: 'easeInOutCirc'
+  },
+  direction: 'alternate',
+  duration: 1200,
+  loop: true,
+  autoplay: false
+});
+
+let threestarAnimation02 = anime({
+  targets: '#krushochek',
+  scale: {
+    value: 1.2,
+    duration: 700,
+    delay: 200,
+    easing: 'easeInOutCirc'
+  },
+  direction: 'alternate',
+  duration: 1200,
+  loop: true,
+  autoplay: false
+});
+
+let threestarAnimation03 = anime({
+  targets: '#krushochek3',
+  translateX: 110,
+  duration: 900,
+  direction: 'alternate',
+  easing: 'easeInOutCirc',
+  loop: true,
+  autoplay: false
+});
+
 
 // Массив объектов. Каждый объект в массиве - звезда с ценой, массивом анимаций и селектором.
 let stars = [
@@ -255,6 +310,16 @@ let stars = [
     'cost': 1200,
     'animations': [littlecubeAnimation],
     'selector': '.littlecube'
+  },
+  {
+    'cost': 500,
+    'animations': [miniplaneteAnimation],
+    'selector': '.miniplanet'
+  },
+  {
+    'cost': 3000,
+    'animations': [threestarAnimation, threestarAnimation02, threestarAnimation03],
+    'selector': '.threestar'
   }
 ]
 
