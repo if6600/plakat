@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Mukta+Vaani:300,400&display=swap');
 
 main {
-  border: 1px solid gray;
   font-family: 'Mukta Vaani', sans-serif;
   position: relative;
   max-width: 1300px;
