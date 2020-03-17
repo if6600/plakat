@@ -258,16 +258,16 @@ let stars = [
   }
 ]
 
-var onclick = 0
+var onclickOnPlanet = 0
 document.getElementById('planet_1').onclick = changeColor;
     function changeColor() {
-      onclick++
-      if (onclick % 2 === 0) {
+      onclickOnPlanet++
+      if (onclickOnPlanet % 2 === 0) {
+        document.body.style.filter = 'invert(0%) sepia(17%) saturate(7461%) hue-rotate(254deg) brightness(100%) contrast(100%)'
+        document.body.style.backgroundColor = 'white'
+      } else {
         document.body.style.filter = 'invert(100%) sepia(100%) saturate(0%) hue-rotate(322deg) brightness(101%) contrast(103%)'
         document.body.style.backgroundColor = 'black'
-      } else {
-        document.body.style.filter = 'invert(100%) sepia(0%) saturate(0%) hue-rotate(103deg) brightness(105%) contrast(105%)'
-        document.body.style.backgroundColor = 'white'
       }
     }
 
