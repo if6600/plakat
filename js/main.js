@@ -55,11 +55,18 @@ let circleAnimation02 = anime({
 
 let curveDashedAnimation = anime({
   targets: '.curvedashed',
-  rotate: function() {
-    return anime.random(0, 300);
-  },
-  easing: 'easeInOutQuad',
-  duration: 800,
+  translateX: [
+    { value: -150, duration: 1000, delay: 500 },
+    { value: 0, duration: 1000, delay: 500 }
+  ],
+  scaleX: [
+    { value: 2, duration: 100, delay: 500, easing: 'easeOutExpo' },
+    { value: 1, duration: 900 },
+    { value: 2, duration: 100, delay: 500, easing: 'easeOutExpo' },
+    { value: 1, duration: 900 }
+  ],
+  easing: 'easeOutElastic(1, .8)',
+  loop: true,
   autoplay: false
 });
 
@@ -161,9 +168,17 @@ let planetAnimation = anime({
 
 let krugAnimation02 = anime({
   targets: '.krug1',
+  height: {
+    value: '-=20px',
+    duration: 1200,
+    easing: 'easeInOutSine'
+  },
+  width: {
+    value: '+=30px',
+    duration: 1200,
+    easing: 'easeInOutSine'
+  },
   direction: 'alternate',
-  easing: 'easeInOutQuad',
-  duration: 1500,
   loop: true,
   autoplay: false
 });
@@ -243,6 +258,71 @@ let threestarAnimation03 = anime({
   autoplay: false
 });
 
+let sferastAnimation = anime({
+  targets: '.sferast',
+  scale: 4,
+  duration: 900,
+  direction: 'alternate',
+  easing: 'easeInOutCirc',
+  loop: true,
+  autoplay: false
+});
+
+let krugstAnimation = anime({
+  targets: '.krugst',
+  scale: 1.5,
+  translateX: [-10, 10],
+  duration: 900,
+  direction: 'alternate',
+  easing: 'easeInOutCirc',
+  loop: true,
+  autoplay: false
+});
+
+let linesstAnimation = anime({
+  targets: '.linesst',
+  translateX: [-10, 10],
+  duration: 900,
+  direction: 'alternate',
+  easing: 'easeInOutQuad',
+  loop: true,
+  autoplay: false
+});
+
+let sputnikAnimation = anime({
+  targets: '.sputnuk',
+  easing: 'easeInOutQuad',
+  direction: 'alternate',
+  duration: 3000,
+  loop: true
+});
+
+let triangleAnimation = anime({
+  targets: '.triangle',
+  easing: 'easeInOutQuad',
+  direction: 'alternate',
+  duration: 3000,
+  loop: true
+});
+
+let moonAnimation = anime({
+  targets: '.moon',
+  scale: {
+    value: -1.1,
+    duration: 1000,
+    delay: 200,
+    easing: 'easeInOutQuart',
+    direction: 'alternate'
+  },
+  easing: 'easeInOutQuad',
+  direction: 'alternate',
+  duration: 3000,
+  loop: true,
+  autoplay: false
+});
+
+
+
 
 // Массив объектов. Каждый объект в массиве - звезда с ценой, массивом анимаций и селектором.
 let stars = [
@@ -320,9 +400,20 @@ let stars = [
     'cost': 3000,
     'animations': [threestarAnimation, threestarAnimation02, threestarAnimation03],
     'selector': '.threestar'
+  },
+  {
+    'cost': 5000,
+    'animations': [krugstAnimation, sferastAnimation, linesstAnimation],
+    'selector': '.largestar'
+  },
+  {
+    'cost': 4500,
+    'animations': [moonAnimation],
+    'selector': '.moon'
   }
 ]
 
+// Счетчик с изменением цвета по клику
 var onclickOnPlanet = 0
 document.getElementById('planet_1').onclick = changeColor;
     function changeColor() {
@@ -330,9 +421,11 @@ document.getElementById('planet_1').onclick = changeColor;
       if (onclickOnPlanet % 2 === 0) {
         document.body.style.filter = 'invert(0%) sepia(0%) saturate(7461%) hue-rotate(254deg) brightness(100%) contrast(100%)'
         document.body.style.backgroundColor = 'white'
+        document.body.style.transition = '1000ms'
       } else {
-        document.body.style.filter = 'invert(100%) sepia(100%) saturate(0%) hue-rotate(322deg) brightness(101%) contrast(103%)'
+        document.body.style.filter = 'invert(100%) sepia(0%) saturate(0%) hue-rotate(322deg) brightness(100%) contrast(100%)'
         document.body.style.backgroundColor = 'black'
+        document.body.style.transition = '1000ms'
       }
     }
 
