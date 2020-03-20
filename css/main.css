@@ -43,7 +43,7 @@ main {
   height: 10px;
   left: 100px;
   top: 700px;
-  border-radius: 100px;
+  border-radius: 100%;
   background-color: black;
   opacity: 40%;
   z-index: 75;
@@ -67,8 +67,8 @@ main {
   left: 900px;
   top: 100px;
   border: 2px solid black;
+  transition: 100ms;
   z-index: 75;
-  cursor: pointer;
 }
 
 .miniplanet:before {
@@ -87,7 +87,8 @@ main {
   height: 60px;
   left: 900px;
   top: 600px;
-  border-radius: 100px;
+  transition: 100ms;
+  border-radius: 100%;
   border: 2px solid black;
   z-index: 75;
   cursor: pointer;
@@ -99,7 +100,8 @@ main {
   height: 20px;
   left: 910px;
   top: 618px;
-  border-radius: 100px;
+  border-radius: 100%;
+  transition: 100ms;
   border: 2px solid black;
   z-index: 75;
   cursor: pointer;
@@ -111,7 +113,8 @@ main {
   height: 15px;
   left: 870px;
   top: 630px;
-  border-radius: 100px;
+  border-radius: 100%;
+  transition: 100ms;
   background-color: black;
   z-index: 75;
   cursor: pointer;
@@ -155,8 +158,8 @@ div.plakat::after {
   top: 150px;
   width: 40px;
   left: 130px;
+  transition: 100ms;
   z-index: 74;
-  cursor: pointer;
 }
 
 .krivaya {
@@ -164,8 +167,8 @@ div.plakat::after {
   top: 480px;
   width: 60px;
   left: 240px;
+  transition: 100ms;
   z-index: 74;
-  cursor: pointer;
 }
 
 .sputnuk {
@@ -174,7 +177,6 @@ div.plakat::after {
   width: 50px;
   right: -20px;
   z-index: 74;
-  cursor: pointer;
 }
 
 .sputnuk:before {
@@ -192,9 +194,9 @@ div.plakat::after {
   top: 230px;
   width: 160px;
   left: 130px;
+  transition: 100ms;
   opacity: 40%;
   z-index: 79;
-  cursor: pointer;
 }
 
 .star1 {
@@ -202,8 +204,8 @@ div.plakat::after {
   top: 126px;
   left: 400px;
   width: 85px;
+  transition: 100ms;
   height: 59px;
-  cursor: pointer;
 }
 
 .ministar {
@@ -211,8 +213,8 @@ div.plakat::after {
   top: 490px;
   width: 50px;
   left: 78px;
+  transition: 100ms;
   z-index: 78;
-  cursor: pointer;
 }
 
 .ministar:before {
@@ -230,8 +232,8 @@ div.plakat::after {
   top: 150px;
   width: 40px;
   right: 130px;
+  transition: 100ms;
   z-index: 78;
-  cursor: pointer;
 }
 
 .ministar2:before {
@@ -249,8 +251,8 @@ div.plakat::after {
   top: 400px;
   width: 50px;
   right: 50px;
+  transition: 100ms;
   z-index: 78;
-  cursor: pointer;
 }
 
 .ministar3:before {
@@ -269,6 +271,7 @@ div.plakat::after {
   width: 110px;
   left: 200px;
   opacity: 50%;
+  transition: 100ms;
   z-index: 78;
   cursor: pointer;
 }
@@ -278,6 +281,7 @@ div.plakat::after {
   top: 650px;
   width: 30px;
   left: 240px;
+  transition: 100ms;
   z-index: 79;
   cursor: pointer;
 }
@@ -287,6 +291,7 @@ div.plakat::after {
   top: 520px;
   width: 150px;
   left: 280px;
+  transition: 100ms;
   z-index: 79;
   cursor: pointer;
 }
@@ -297,7 +302,6 @@ div.plakat::after {
   width: 100px;
   left: 100px;
   z-index: 79;
-  cursor: pointer;
 }
 
 .cube {
@@ -307,8 +311,8 @@ div.plakat::after {
   border: 2px solid black;
   bottom: 267px;
   right: 210px;
+  transition: 100ms;
   z-index: 97;
-  cursor: pointer;
 }
 
 .cube:before {
@@ -328,8 +332,8 @@ div.plakat::after {
   border: 1px solid black;
   bottom: 370px;
   right: 300px;
+  transition: 100ms;
   z-index: 96;
-  cursor: pointer;
 }
 
 .cube2:before {
@@ -349,8 +353,8 @@ div.plakat::after {
   transform: rotate(30deg);
   top: 18px;
   left: 20px;
+  transition: 100ms;
   z-index: 95;
-  cursor: pointer;
 }
 
 #lineright {
@@ -358,21 +362,21 @@ div.plakat::after {
   width: 70px;
   border: 0.5px solid black;
   transform: rotate(-50deg);
-  top: 27px;
+  top: 18px;
+  transition: 100ms;
   z-index: 94;
-  cursor: pointer;
 }
 
 #circle {
   position: absolute;
   width: 10px;
   height: 10px;
-  border-radius: 100px;
+  border-radius: 100%;
   background-color: black;
   top: 30px;
-  left: 46px;
+  left: 40px;
+  transition: 100ms;
   z-index: 93;
-  cursor: pointer;
 }
 
 .star2 {
@@ -381,17 +385,18 @@ div.plakat::after {
   height: 50px;
   top: 80px;
   left: 300px;
-  cursor: pointer;
+  transition: 100ms;
 }
 
 #aura3 {
   position: absolute;
   width: 50px;
   height: 50px;
-  border-radius: 50px;
+  border-radius: 100%;
   border: 1px solid black;
   top: 0;
   left: 0;
+  transition: 100ms;
   z-index: 92;
 }
 
@@ -399,10 +404,11 @@ div.plakat::after {
   position: absolute;
   width: 30px;
   height: 30px;
-  border-radius: 30px;
+  border-radius: 100%;
   border: 1px solid black;
   top: 10px;
   left: 10px;
+  transition: 100ms;
   z-index: 91;
 }
 
@@ -410,10 +416,11 @@ div.plakat::after {
   position: absolute;
   width: 10px;
   height: 10px;
-  border-radius: 10px;
+  border-radius: 100%;
   border: 1px solid black;
   top: 20px;
   left: 20px;
+  transition: 100ms;
   z-index: 89;
 }
 
@@ -427,7 +434,7 @@ div.plakat::after {
   position: absolute;
   width: 30px;
   height: 30px;
-  border-radius: 30px;
+  border-radius: 100%;
   background-color: black;
   bottom: 130px;
   left: 700px;
@@ -438,7 +445,7 @@ div.plakat::after {
   position: absolute;
   width: 20px;
   height: 20px;
-  border-radius: 100px;
+  border-radius: 100%;
   border: 1px solid black;
   top: 50px;
   left: 600px;
@@ -461,7 +468,6 @@ div.plakat::after {
   top: 220px;
   left: 470px;
   position: absolute;
-  cursor: pointer;
   z-index: 86;
 }
 
@@ -472,6 +478,7 @@ div.plakat::after {
   transform: rotate(-35deg);
   top: 120px;
   left: 100px;
+  transition: 100ms;
   z-index: 86;
 }
 
@@ -492,6 +499,7 @@ div.plakat::after {
   border: 1px solid black;
   top: 275px;
   left: 220px;
+  transition: 100ms;
   z-index: 85;
 }
 
@@ -514,7 +522,7 @@ div.plakat::after {
 .podzagolovok {
   color: black;
   font-size: 35px;
-  line-height: 40px;
+  line-height: 50px;
   padding-left: 150px;
 }
 
@@ -531,11 +539,13 @@ div.plakat::after {
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
   font-size: 30px;
+  line-height: 70px;
 }
 
 .info {
   color: black;
-  font-size: 25px;
+  font-size: 20px;
+  width: 250px;
 }
 
 #cost {
@@ -549,6 +559,8 @@ div.plakat::after {
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   right: 150px;
+  line-height: 30px;
+  text-align: center;
 }
 
 @media (max-width: 1024px) {
@@ -557,7 +569,7 @@ div.plakat::after {
     position: relative;
     max-width: 1024px;
     height: 1050px;
-    margin: 10% 5%;
+    margin: 8% 5%;
   }
 
   .header-wrap {
@@ -595,7 +607,6 @@ div.plakat::after {
   }
 
   .miniplanet {
-    position: absolute;
     width: 60px;
     height: 40px;
     left: 810px;
@@ -607,31 +618,20 @@ div.plakat::after {
     height: 100px;
     left: 780px;
     top: 550px;
-    border-radius: 100px;
   }
 
   .krushochek2 {
-    position: absolute;
     width: 40px;
     height: 40px;
     left: 800px;
     top: 570px;
-    border-radius: 100px;
-    border: 2px solid black;
-    z-index: 75;
-    cursor: pointer;
   }
 
   .krushochek3 {
-    position: absolute;
     width: 25px;
     height: 25px;
     left: 750px;
     top: 580px;
-    border-radius: 100px;
-    background-color: black;
-    z-index: 75;
-    cursor: pointer;
   }
 
   .plakat {
@@ -694,7 +694,7 @@ div.plakat::after {
   }
 
   .ministar3 {
-    top: 400px;
+    top: 380px;
     width: 110px;
     right: -20px;
   }
@@ -758,8 +758,6 @@ div.plakat::after {
   #circle {
     width: 20px;
     height: 20px;
-    border-radius: 100px;
-    background-color: black;
     top: 30px;
     left: 53px;
   }
@@ -774,8 +772,6 @@ div.plakat::after {
   #aura3 {
     width: 80px;
     height: 80px;
-    border-radius: 80px;
-    border: 1px solid black;
     top: 0;
     left: -50px;
   }
@@ -783,8 +779,6 @@ div.plakat::after {
   #aura2 {
     width: 50px;
     height: 50px;
-    border-radius: 50px;
-    border: 1px solid black;
     top: 15px;
     left: -34px;
   }
@@ -792,8 +786,6 @@ div.plakat::after {
   #aura1 {
     width: 20px;
     height: 20px;
-    border-radius: 20px;
-    border: 1px solid black;
     top: 30px;
     left: -19px;
   }
@@ -801,7 +793,6 @@ div.plakat::after {
   .krug1 {
     width: 40px;
     height: 40px;
-    border-radius: 40px;
     bottom: 70px;
     left: 710px;
   }
@@ -809,8 +800,6 @@ div.plakat::after {
   .krug2 {
     width: 30px;
     height: 30px;
-    border-radius: 100px;
-    border: 1px solid black;
     top: 10px;
     left: 600px;
   }
@@ -849,11 +838,13 @@ div.plakat::after {
   }
 
   .cost {
-    font-size: 30px;
+    font-size: 50px;
   }
 
   .info {
     padding-top: 1200px;
+    font-size: 22px;
+    width: 500px;
   }
 
   #cost {
@@ -863,7 +854,8 @@ div.plakat::after {
 
   .description {
     top: 59%;
-    right: 350px;
+    right: 200px;
+    line-height: 30px;
   }
 
 }
@@ -874,7 +866,7 @@ div.plakat::after {
     max-width: 900px;
     width: 770px;
     height: 1250px;
-    margin: 30% 5%;
+    margin: 22% 5%;
   }
 
   .content {
@@ -883,7 +875,7 @@ div.plakat::after {
   }
 
   .cubestatic {
-    left: 800px;
+    left: 760px;
     top: 200px;
   }
 
@@ -898,8 +890,8 @@ div.plakat::after {
   .miniplanet {
     width: 60px;
     height: 40px;
-    left: 750px;
-    top: 20px;
+    left: 700px;
+    top: 0px;
   }
 
   .triangle {
@@ -935,7 +927,6 @@ div.plakat::after {
     height: 20px;
     left: 660px;
     top: 630px;
-    border-radius: 100px;
   }
 
   .plakat {
@@ -1062,7 +1053,7 @@ div.plakat::after {
   #circle {
     width: 25px;
     height: 25px;
-    border-radius: 100px;
+    border-radius: 100%;
     top: 3px;
     left: 53px;
   }
@@ -1077,7 +1068,6 @@ div.plakat::after {
   #aura3 {
     width: 100px;
     height: 100px;
-    border-radius: 80px;
     border: 1px solid black;
     top: -140px;
     left: -40px;
@@ -1086,7 +1076,6 @@ div.plakat::after {
   #aura2 {
     width: 70px;
     height: 70px;
-    border-radius: 50px;
     border: 1px solid black;
     top: -125px;
     left: -24px;
@@ -1095,7 +1084,6 @@ div.plakat::after {
   #aura1 {
     width: 35px;
     height: 35px;
-    border-radius: 20px;
     border: 1px solid black;
     top: -107px;
     left: -7px;
@@ -1104,7 +1092,6 @@ div.plakat::after {
   .krug1 {
     width: 50px;
     height: 50px;
-    border-radius: 100px;
     top: 920px;
     left: 700px;
   }
@@ -1112,9 +1099,8 @@ div.plakat::after {
   .krug2 {
     width: 60px;
     height: 60px;
-    border-radius: 100px;
     border: 1px solid black;
-    top: -110px;
+    top: -140px;
     left: 610px;
   }
 
@@ -1158,7 +1144,8 @@ div.plakat::after {
 
   .info {
     padding-top: 1200px;
-    font-size: 35px;
+    font-size: 25px;
+    width: 600px;
   }
 
   #cost {
@@ -1167,8 +1154,8 @@ div.plakat::after {
   }
 
   .description {
-    top: 97%;
-    right: 300px;
+    top: 91%;
+    right: 50px;
   }
 
 }

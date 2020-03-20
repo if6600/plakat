@@ -292,9 +292,12 @@ let linesstAnimation = anime({
 let sputnikAnimation = anime({
   targets: '.sputnuk',
   easing: 'easeInOutQuad',
+  strokeWidth: '3',
+  translateY: [-10, 10],
   direction: 'alternate',
-  duration: 3000,
-  loop: true
+  duration: 1000,
+  loop: true,
+  autoplay: false
 });
 
 let triangleAnimation = anime({
@@ -314,12 +317,12 @@ let moonAnimation = anime({
     easing: 'easeInOutQuart',
     direction: 'alternate'
   },
-  easing: 'easeInOutQuad',
   direction: 'alternate',
   duration: 3000,
   loop: true,
   autoplay: false
 });
+
 
 
 
@@ -342,22 +345,22 @@ let stars = [
    'selector': '.curvedashed-wrap'
   },
   {
-    'cost': 1300,
+    'cost': 2000,
     'animations': [cubeAnimation01],
     'selector': '.cube'
   },
   {
-    'cost': 1300,
+    'cost': 1400,
     'animations': [svgAnimation],
     'selector': '.cube2'
   },
   {
-    'cost': 1300,
+    'cost': 5500,
     'animations': [ministarAnimation],
     'selector': '.ministar'
   },
   {
-    'cost': 1300,
+    'cost': 1500,
     'animations': [ministarAnimation02],
     'selector': '.ministar2'
   },
@@ -367,12 +370,12 @@ let stars = [
     'selector': '.krug2'
   },
   {
-    'cost': 500,
+    'cost': 2500,
     'animations': [ministarAnimation03],
     'selector': '.ministar3'
   },
   {
-    'cost': 10000,
+    'cost': 100000,
     'animations': [planetAnimation],
     'selector': '.planet'
   },
@@ -382,7 +385,7 @@ let stars = [
     'selector': '.krug1'
   },
   {
-    'cost': 1200,
+    'cost': 4000,
     'animations': [krivayaAnimation02],
     'selector': '.krivaya'
   },
@@ -392,12 +395,12 @@ let stars = [
     'selector': '.littlecube'
   },
   {
-    'cost': 500,
+    'cost': 1200,
     'animations': [miniplaneteAnimation],
     'selector': '.miniplanet'
   },
   {
-    'cost': 3000,
+    'cost': 9000,
     'animations': [threestarAnimation, threestarAnimation02, threestarAnimation03],
     'selector': '.threestar'
   },
@@ -407,9 +410,14 @@ let stars = [
     'selector': '.largestar'
   },
   {
-    'cost': 4500,
+    'cost': 8500,
     'animations': [moonAnimation],
     'selector': '.moon'
+  },
+  {
+    'cost': 1300,
+    'animations': [sputnikAnimation],
+    'selector': '.sputnuk'
   }
 ]
 
@@ -428,6 +436,124 @@ document.getElementById('planet_1').onclick = changeColor;
         document.body.style.transition = '1000ms'
       }
     }
+
+let triangle = document.querySelector(".triangle")
+let triangle2 = document.querySelector(".triangle2")
+let circlestatic = document.querySelector(".circlestatic")
+let cubestatic = document.querySelector(".cubestatic")
+var onclickOnSpheres = 1
+document.getElementById('largestar').onclick = changePosition;
+  function changePosition() {
+    onclickOnSpheres++
+    if (onclickOnSpheres % 2 === 0) {
+      triangle.style.left = '400px'
+      triangle.style.transition = '200ms'
+      triangle2.style.top = '400px'
+      triangle2.style.left = '250px'
+      triangle2.style.transition = '200ms'
+      circlestatic.style.width = '30px'
+      circlestatic.style.height = '30px'
+      circlestatic.style.transition = '200ms'
+      cubestatic.style.width = '40px'
+      cubestatic.style.height = '40px'
+      cubestatic.style.transform = 'rotate(30deg)'
+      cubestatic.style.transition = '200ms'
+    } else {
+      triangle.style.left = '800px'
+      triangle.style.transition = '200ms'
+      triangle2.style.top = '50px'
+      triangle2.style.left = '100px'
+      triangle2.style.transition = '200ms'
+      circlestatic.style.width = '10px'
+      circlestatic.style.height = '10px'
+      circlestatic.style.transition = '200ms'
+      cubestatic.style.width = '10px'
+      cubestatic.style.height = '10px'
+      cubestatic.style.transform = 'rotate(0deg)'
+      cubestatic.style.transition = '200ms'
+    }
+  }
+
+  var onclickOnThreestar = 1
+  document.getElementById('threestar').onclick = animationStart;
+      function animationStart() {
+        onclickOnThreestar++
+        if (onclickOnThreestar % 2 === 0) {
+          moonAnimation.play();
+          circleAnimation.play();
+          lineAnimation01.play();
+          lineAnimation02.play();
+          circleAnimation02.play();
+          curveDashedAnimation.play();
+          cubeAnimation01.play();
+          svgAnimation.play();
+          ministarAnimation.play();
+          ministarAnimation02.play();
+          krugAnimation.play();
+          ministarAnimation03.play();
+          planetAnimation.play();
+          krugAnimation02.play();
+          krivayaAnimation02.play();
+          littlecubeAnimation.play();
+          miniplaneteAnimation.play();
+          threestarAnimation.play();
+          threestarAnimation02.play();
+          threestarAnimation03.play();
+          krugstAnimation.play();
+          sferastAnimation.play();
+          linesstAnimation.play();
+          sputnikAnimation.play();
+        } else {
+          moonAnimation.seek(0);
+          moonAnimation.pause();
+          circleAnimation.seek(0);
+          circleAnimation.pause();
+          lineAnimation01.seek(0);
+          lineAnimation01.pause();
+          lineAnimation02.seek(0);
+          lineAnimation02.pause();
+          circleAnimation02.seek(0);
+          circleAnimation02.pause();
+          curveDashedAnimation.seek(0);
+          curveDashedAnimation.pause();
+          cubeAnimation01.seek(0);
+          cubeAnimation01.pause();
+          svgAnimation.seek(0);
+          svgAnimation.pause();
+          ministarAnimation.seek(0);
+          ministarAnimation.pause();
+          ministarAnimation02.seek(0);
+          ministarAnimation02.pause();
+          krugAnimation.seek(0);
+          krugAnimation.pause();
+          ministarAnimation03.seek(0);
+          ministarAnimation03.pause();
+          planetAnimation.seek(0);
+          planetAnimation.pause();
+          krugAnimation02.seek(0);
+          krugAnimation02.pause();
+          krivayaAnimation02.seek(0);
+          krivayaAnimation02.pause();
+          littlecubeAnimation.seek(0);
+          littlecubeAnimation.pause();
+          miniplaneteAnimation.seek(0);
+          miniplaneteAnimation.pause();
+          threestarAnimation.seek(0);
+          threestarAnimation.pause();
+          threestarAnimation02.seek(0);
+          threestarAnimation02.pause();
+          threestarAnimation03.seek(0);
+          threestarAnimation03.pause();
+          krugstAnimation.seek(0);
+          krugstAnimation.pause();
+          sferastAnimation.seek(0);
+          sferastAnimation.pause();
+          linesstAnimation.seek(0);
+          linesstAnimation.pause();
+          sputnikAnimation.seek(0);
+          sputnikAnimation.pause();
+        }
+      }
 
 // Цикл по массиву звезд
 stars.forEach((item_g) => {
