@@ -423,7 +423,7 @@ let stars = [
 
 // Счетчик с изменением цвета по клику
 var onclickOnPlanet = 0
-document.getElementById('planet_1').onclick = changeColor;
+document.getElementById('planet_1').onclick = changeColor
     function changeColor() {
       onclickOnPlanet++
       if (onclickOnPlanet % 2 === 0) {
@@ -437,12 +437,13 @@ document.getElementById('planet_1').onclick = changeColor;
       }
     }
 
+// Счетчик изменения статичных фигур
 let triangle = document.querySelector(".triangle")
 let triangle2 = document.querySelector(".triangle2")
 let circlestatic = document.querySelector(".circlestatic")
 let cubestatic = document.querySelector(".cubestatic")
 var onclickOnSpheres = 1
-document.getElementById('largestar').onclick = changePosition;
+document.getElementById('largestar').onclick = changePosition
   function changePosition() {
     onclickOnSpheres++
     if (onclickOnSpheres % 2 === 0) {
@@ -474,86 +475,132 @@ document.getElementById('largestar').onclick = changePosition;
     }
   }
 
+// Анимация всех объектов при нажатии
   var onclickOnThreestar = 1
-  document.getElementById('threestar').onclick = animationStart;
+  document.getElementById('threestar').onclick = animationStart
       function animationStart() {
         onclickOnThreestar++
         if (onclickOnThreestar % 2 === 0) {
-          moonAnimation.play();
-          circleAnimation.play();
-          lineAnimation01.play();
-          lineAnimation02.play();
-          circleAnimation02.play();
-          curveDashedAnimation.play();
-          cubeAnimation01.play();
-          svgAnimation.play();
-          ministarAnimation.play();
-          ministarAnimation02.play();
-          krugAnimation.play();
-          ministarAnimation03.play();
-          planetAnimation.play();
-          krugAnimation02.play();
-          krivayaAnimation02.play();
-          littlecubeAnimation.play();
-          miniplaneteAnimation.play();
-          threestarAnimation.play();
-          threestarAnimation02.play();
-          threestarAnimation03.play();
-          krugstAnimation.play();
-          sferastAnimation.play();
-          linesstAnimation.play();
-          sputnikAnimation.play();
+          moonAnimation.play()
+          circleAnimation.play()
+          lineAnimation01.play()
+          lineAnimation02.play()
+          circleAnimation02.play()
+          curveDashedAnimation.play()
+          cubeAnimation01.play()
+          svgAnimation.play()
+          ministarAnimation.play()
+          ministarAnimation02.play()
+          krugAnimation.play()
+          ministarAnimation03.play()
+          planetAnimation.play()
+          krugAnimation02.play()
+          krivayaAnimation02.play()
+          littlecubeAnimation.play()
+          miniplaneteAnimation.play()
+          threestarAnimation.play()
+          threestarAnimation02.play()
+          threestarAnimation03.play()
+          krugstAnimation.play()
+          sferastAnimation.play()
+          linesstAnimation.play()
+          sputnikAnimation.play()
         } else {
-          moonAnimation.seek(0);
-          moonAnimation.pause();
-          circleAnimation.seek(0);
-          circleAnimation.pause();
-          lineAnimation01.seek(0);
-          lineAnimation01.pause();
-          lineAnimation02.seek(0);
-          lineAnimation02.pause();
-          circleAnimation02.seek(0);
-          circleAnimation02.pause();
-          curveDashedAnimation.seek(0);
-          curveDashedAnimation.pause();
-          cubeAnimation01.seek(0);
-          cubeAnimation01.pause();
-          svgAnimation.seek(0);
-          svgAnimation.pause();
-          ministarAnimation.seek(0);
-          ministarAnimation.pause();
-          ministarAnimation02.seek(0);
-          ministarAnimation02.pause();
-          krugAnimation.seek(0);
-          krugAnimation.pause();
-          ministarAnimation03.seek(0);
-          ministarAnimation03.pause();
-          planetAnimation.seek(0);
-          planetAnimation.pause();
-          krugAnimation02.seek(0);
-          krugAnimation02.pause();
-          krivayaAnimation02.seek(0);
-          krivayaAnimation02.pause();
-          littlecubeAnimation.seek(0);
-          littlecubeAnimation.pause();
-          miniplaneteAnimation.seek(0);
-          miniplaneteAnimation.pause();
-          threestarAnimation.seek(0);
-          threestarAnimation.pause();
-          threestarAnimation02.seek(0);
-          threestarAnimation02.pause();
-          threestarAnimation03.seek(0);
-          threestarAnimation03.pause();
-          krugstAnimation.seek(0);
-          krugstAnimation.pause();
-          sferastAnimation.seek(0);
-          sferastAnimation.pause();
-          linesstAnimation.seek(0);
-          linesstAnimation.pause();
-          sputnikAnimation.seek(0);
-          sputnikAnimation.pause();
+          moonAnimation.seek(0)
+          moonAnimation.pause()
+          circleAnimation.seek(0)
+          circleAnimation.pause()
+          lineAnimation01.seek(0)
+          lineAnimation01.pause()
+          lineAnimation02.seek(0)
+          lineAnimation02.pause()
+          circleAnimation02.seek(0)
+          circleAnimation02.pause()
+          curveDashedAnimation.seek(0)
+          curveDashedAnimation.pause()
+          cubeAnimation01.seek(0)
+          cubeAnimation01.pause()
+          svgAnimation.seek(0)
+          svgAnimation.pause()
+          ministarAnimation.seek(0)
+          ministarAnimation.pause()
+          ministarAnimation02.seek(0)
+          ministarAnimation02.pause()
+          krugAnimation.seek(0)
+          krugAnimation.pause()
+          ministarAnimation03.seek(0)
+          ministarAnimation03.pause()
+          planetAnimation.seek(0)
+          planetAnimation.pause()
+          krugAnimation02.seek(0)
+          krugAnimation02.pause()
+          krivayaAnimation02.seek(0)
+          krivayaAnimation02.pause()
+          littlecubeAnimation.seek(0)
+          littlecubeAnimation.pause()
+          miniplaneteAnimation.seek(0)
+          miniplaneteAnimation.pause()
+          threestarAnimation.seek(0)
+          threestarAnimation.pause()
+          threestarAnimation02.seek(0)
+          threestarAnimation02.pause()
+          threestarAnimation03.seek(0)
+          threestarAnimation03.pause()
+          krugstAnimation.seek(0)
+          krugstAnimation.pause()
+          sferastAnimation.seek(0)
+          sferastAnimation.pause()
+          linesstAnimation.seek(0)
+          linesstAnimation.pause()
+          sputnikAnimation.seek(0)
+          sputnikAnimation.pause()
         }
       }
+
+
+var onclickOnAura = 1
+let addFigures = 10
+for (let i = 0; i < addFigures; i += 1) {
+  let div = document.createElement('div')
+  if (anime.random(0,100) % 2 === 0) {
+    let size = `${anime.random(0,30)}px`
+    div.style.width = size
+    div.style.height = size
+    div.style.borderRadius = '100%'
+    div.style.background = 'black'
+  } else {
+    div.style.width = `${anime.random(0,30)}px`
+    div.style.height = `${anime.random(0,30)}px`
+    div.style.borderRadius = '100%'
+    div.style.border = '1px solid black'
+  }
+  div.style.transition = '1000ms'
+  div.style.position = 'relative'
+  div.style.zIndex = 76
+  div.style.transform = `translate(${anime.random(0,50)}vw,${anime.random(0,50)}vh) rotate(${anime.random(0,360)}deg)`
+
+  div.onmouseenter = function(e) {
+    let elStyle = e.target.style
+    let elWidthNum = Number(elStyle.width.slice(0,-2))
+    let elHeightNum = Number(elStyle.height.slice(0,-2))
+
+    if (elWidthNum === elHeightNum) {
+      let size = `${anime.random(0,30)}px`
+      elStyle.width = size
+      elStyle.height = size
+    } else {
+      elStyle.width = `${anime.random(0,30)}px`
+      elStyle.height = `${anime.random(0,30)}px`
+    }
+    elStyle.transition = '1000ms'
+    elStyle.position = 'relative'
+    elStyle.zIndex = 76
+    elStyle.transform = `translate(${anime.random(0,50)}vw,${anime.random(0,50)}vh) rotate(${anime.random(0,360)}deg)`
+  }
+
+  document.body.append(div)
+}
+
 
 // Цикл по массиву звезд
 stars.forEach((item_g) => {

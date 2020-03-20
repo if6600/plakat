@@ -398,6 +398,7 @@ div.plakat::after {
   left: 0;
   transition: 100ms;
   z-index: 92;
+  cursor: pointer;
 }
 
 #aura2 {
@@ -410,6 +411,7 @@ div.plakat::after {
   left: 10px;
   transition: 100ms;
   z-index: 91;
+  cursor: pointer;
 }
 
 #aura1 {
@@ -422,6 +424,7 @@ div.plakat::after {
   left: 20px;
   transition: 100ms;
   z-index: 89;
+  cursor: pointer;
 }
 
 .zvezda {
@@ -545,7 +548,7 @@ div.plakat::after {
 .info {
   color: black;
   font-size: 20px;
-  width: 250px;
+  width: 270px;
 }
 
 #cost {
@@ -834,7 +837,7 @@ div.plakat::after {
 
   .zagolovok {
     font-size: 125px;
-    line-height: 85px;
+    line-height: 90px;
   }
 
   .cost {
@@ -1129,7 +1132,7 @@ div.plakat::after {
   .podzagolovok {
     color: black;
     font-size: 40px;
-    padding-left: 15px;
+    padding-left: 30px;
     line-height: 85px;
   }
 
