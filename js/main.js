@@ -557,10 +557,50 @@ document.getElementById('largestar').onclick = changePosition
         }
       }
 
+      let addCircles = document.getElementById('star2')
+      addCircles.onclick = function() {
+          let numberOfCircles = 20
+          for(let i = 0; i < numberOfCircles; i++) {
+              let divCircles = document.createElement('div')
+              divCircles.classList.toggle('addrandomcircle')
+              if (anime.random(0,100) % 2 === 0) {
+                let size = `${anime.random(0,30)}px`
+                divCircles.style.width = size
+                divCircles.style.height = size
+                divCircles.style.borderRadius = '100%'
+                divCircles.style.background = 'black'
+              } else {
+                divCircles.style.width = `${anime.random(0,30)}px`
+                divCircles.style.height = `${anime.random(0,30)}px`
+                divCircles.style.borderRadius = '100%'
+                divCircles.style.border = '1px solid black'
+              }
+              divCircles.style.transition = '1000ms'
+              divCircles.style.transform = `translate(${anime.random(0,100)}vw,${anime.random(0,100)}vh) rotate(${anime.random(0,360)}deg)`
+              document.body.append(divCircles)
 
-var onclickOnAura = 1
-let addFigures = 10
-for (let i = 0; i < addFigures; i += 1) {
+              divCircles.onmouseenter = function(e) {
+                let elStyle = e.target.style
+                let elWidthNum = Number(elStyle.width.slice(0,-2))
+                let elHeightNum = Number(elStyle.height.slice(0,-2))
+
+                if (elWidthNum === elHeightNum) {
+                  let size = `${anime.random(0,30)}px`
+                  elStyle.width = size
+                  elStyle.height = size
+                } else {
+                  elStyle.width = `${anime.random(0,30)}px`
+                  elStyle.height = `${anime.random(0,30)}px`
+                }
+                elStyle.transition = '1000ms'
+                elStyle.transform = `translate(${anime.random(0,50)}vw,${anime.random(0,50)}vh) rotate(${anime.random(0,360)}deg)`
+              }
+          }
+      }
+
+/*
+let callFigures = 10
+for (let i = 0; i < callFigures; i += 1) {
   let div = document.createElement('div')
   if (anime.random(0,100) % 2 === 0) {
     let size = `${anime.random(0,30)}px`
@@ -600,7 +640,7 @@ for (let i = 0; i < addFigures; i += 1) {
 
   document.body.append(div)
 }
-
+*/
 
 // Цикл по массиву звезд
 stars.forEach((item_g) => {

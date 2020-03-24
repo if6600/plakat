@@ -24,6 +24,13 @@ main {
   z-index: 75;
 }
 
+.addrandomcircle {
+  position: absolute;
+  left: 300px;
+  top: 300px;
+  z-index: 75;
+}
+
 .triangle2 {
   position: absolute;
   width: 0;
