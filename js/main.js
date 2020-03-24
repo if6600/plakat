@@ -599,50 +599,6 @@ document.getElementById('largestar').onclick = changePosition
           }
       }
 
-/*
-let callFigures = 10
-for (let i = 0; i < callFigures; i += 1) {
-  let div = document.createElement('div')
-  if (anime.random(0,100) % 2 === 0) {
-    let size = `${anime.random(0,30)}px`
-    div.style.width = size
-    div.style.height = size
-    div.style.borderRadius = '100%'
-    div.style.background = 'black'
-  } else {
-    div.style.width = `${anime.random(0,30)}px`
-    div.style.height = `${anime.random(0,30)}px`
-    div.style.borderRadius = '100%'
-    div.style.border = '1px solid black'
-  }
-  div.style.transition = '1000ms'
-  div.style.position = 'relative'
-  div.style.zIndex = 76
-  div.style.transform = `translate(${anime.random(0,50)}vw,${anime.random(0,50)}vh) rotate(${anime.random(0,360)}deg)`
-
-  div.onmouseenter = function(e) {
-    let elStyle = e.target.style
-    let elWidthNum = Number(elStyle.width.slice(0,-2))
-    let elHeightNum = Number(elStyle.height.slice(0,-2))
-
-    if (elWidthNum === elHeightNum) {
-      let size = `${anime.random(0,30)}px`
-      elStyle.width = size
-      elStyle.height = size
-    } else {
-      elStyle.width = `${anime.random(0,30)}px`
-      elStyle.height = `${anime.random(0,30)}px`
-    }
-    elStyle.transition = '1000ms'
-    elStyle.position = 'relative'
-    elStyle.zIndex = 76
-    elStyle.transform = `translate(${anime.random(0,50)}vw,${anime.random(0,50)}vh) rotate(${anime.random(0,360)}deg)`
-  }
-
-  document.body.append(div)
-}
-*/
-
 // Цикл по массиву звезд
 stars.forEach((item_g) => {
   let complex_stars = Array.from(document.querySelectorAll(item_g['selector']));
