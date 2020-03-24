@@ -260,7 +260,7 @@ let threestarAnimation03 = anime({
 
 let sferastAnimation = anime({
   targets: '.sferast',
-  scale: 4,
+  scale: 2.5,
   duration: 900,
   direction: 'alternate',
   easing: 'easeInOutCirc',
@@ -447,10 +447,10 @@ document.getElementById('largestar').onclick = changePosition
   function changePosition() {
     onclickOnSpheres++
     if (onclickOnSpheres % 2 === 0) {
-      triangle.style.left = '400px'
+      triangle.style.left = '1vw'
       triangle.style.transition = '200ms'
-      triangle2.style.top = '400px'
-      triangle2.style.left = '250px'
+      triangle2.style.left = '20vw'
+      triangle2.style.top = '350px'
       triangle2.style.transition = '200ms'
       circlestatic.style.width = '30px'
       circlestatic.style.height = '30px'
@@ -460,10 +460,10 @@ document.getElementById('largestar').onclick = changePosition
       cubestatic.style.transform = 'rotate(30deg)'
       cubestatic.style.transition = '200ms'
     } else {
-      triangle.style.left = '800px'
+      triangle.style.left = '60vw'
       triangle.style.transition = '200ms'
+      triangle2.style.left = '-5vw'
       triangle2.style.top = '50px'
-      triangle2.style.left = '100px'
       triangle2.style.transition = '200ms'
       circlestatic.style.width = '10px'
       circlestatic.style.height = '10px'
