@@ -327,7 +327,7 @@ let moonAnimation = anime({
 
 
 
-// Массив объектов. Каждый объект в массиве - звезда с ценой, массивом анимаций и селектором.
+// Массив объектов. Каждый объект в массиве - звезда с ценой, массивом анимаций и селектором
 let stars = [
   {
     'cost': 1000,
@@ -557,7 +557,7 @@ document.getElementById('largestar').onclick = changePosition
         }
       }
 
-      // Добавление кружков, статичных для айпада и телефона
+      // Добавление кружков-звезд, статичных для айпада и телефона
       let addCircles = document.getElementById('star2')
       addCircles.onclick = function() {
           let numberOfCircles = 20
@@ -603,7 +603,7 @@ document.getElementById('largestar').onclick = changePosition
 stars.forEach((item_g) => {
   let complex_stars = Array.from(document.querySelectorAll(item_g['selector']));
   let cost = document.getElementById('cost');
-  //Цикл по примитивам, составляющим звезду
+  // Цикл по примитивам, составляющим звезду
   complex_stars.forEach((item_l, i_l) => {
     item_l.addEventListener('mouseover', () => {
       cost.textContent = item_g['cost']; // Вывод цены
@@ -611,7 +611,7 @@ stars.forEach((item_g) => {
     });
   });
 
-  //Цикл по примитивам, составляющим звезду
+  // Цикл по примитивам, составляющим звезду
   complex_stars.forEach((item_l2) => {
     item_l2.addEventListener("mouseleave", () => {
       cost.textContent = '';
