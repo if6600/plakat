@@ -557,6 +557,7 @@ document.getElementById('largestar').onclick = changePosition
         }
       }
 
+      // Добавление кружков, статичных для айпада и телефона
       let addCircles = document.getElementById('star2')
       addCircles.onclick = function() {
           let numberOfCircles = 20
