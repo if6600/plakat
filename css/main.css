@@ -593,7 +593,7 @@ div.plakat::after {
   }
 
   .content {
-    margin: 8% 9%;
+    margin: 8% 11%;
   }
 
   .triangle {
@@ -891,11 +891,7 @@ div.plakat::after {
   }
 
   .content {
-    margin: 11% auto;
-  }
-
-  .triangle {
-    left: 150vw;
+    margin: 11% 5%;
   }
 
   .cubestatic {
@@ -917,17 +913,6 @@ div.plakat::after {
     height: 40px;
     left: 700px;
     top: 0px;
-  }
-
-
-  .triangle2 {
-    width: 0;
-    height: 0;
-    left: 100px;
-    top: 10px;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-bottom: 20px solid black;
   }
 
   .krushochek {
@@ -1175,7 +1160,7 @@ div.plakat::after {
 
   .description {
     top: 37%;
-    left: 37%;
+    left: 40%;
     line-height: 13vw;
   }
 
