@@ -4,6 +4,8 @@ main {
   font-family: 'Mukta Vaani', sans-serif;
   position: relative;
   max-width: 1300px;
+  width: 90%;
+  height: 90%;
   margin: 5% 5%;
 }
 
@@ -137,7 +139,7 @@ div.plakat::after {
   content: "";
   background: url("../img/fon.png");
   background-repeat: no-repeat;
-  background-position: 0 -100px;
+  background-position: 0 -150px;
   opacity: 0.1;
   top: 0;
   left: 0;
