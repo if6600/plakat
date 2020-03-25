@@ -558,29 +558,29 @@ document.getElementById('largestar').onclick = changePosition
       }
 
       // Добавление кружков-звезд, статичных для айпада и телефона
-      let addCircles = document.getElementById('star2')
-      addCircles.onclick = function() {
-          let numberOfCircles = 20
-          for(let i = 0; i < numberOfCircles; i++) {
-              let divCircles = document.createElement('div')
-              divCircles.classList.toggle('addrandomcircle')
+      let addFigures = document.getElementById('star2')
+      addFigures.onclick = function() {
+          let figureNumber = 20
+          for(let i = 0; i < figureNumber; i++) {
+              let divFigures = document.createElement('div')
+              divFigures.classList.toggle('addrandomcircle')
               if (anime.random(0,100) % 2 === 0) {
                 let size = `${anime.random(0,30)}px`
-                divCircles.style.width = size
-                divCircles.style.height = size
-                divCircles.style.borderRadius = '100%'
-                divCircles.style.background = 'black'
+                divFigures.style.width = size
+                divFigures.style.height = size
+                divFigures.style.borderRadius = '100%'
+                divFigures.style.background = 'black'
               } else {
-                divCircles.style.width = `${anime.random(0,30)}px`
-                divCircles.style.height = `${anime.random(0,30)}px`
-                divCircles.style.borderRadius = '100%'
-                divCircles.style.border = '1px solid black'
+                divFigures.style.width = `${anime.random(0,30)}px`
+                divFigures.style.height = `${anime.random(0,30)}px`
+                divFigures.style.borderRadius = '100%'
+                divFigures.style.border = '1px solid black'
               }
-              divCircles.style.transition = '1000ms'
-              divCircles.style.transform = `translate(${anime.random(0,100)}vw,${anime.random(0,100)}vh) rotate(${anime.random(0,360)}deg)`
-              document.body.append(divCircles)
+              divFigures.style.transition = '1000ms'
+              divFigures.style.transform = `translate(${anime.random(0,100)}vw,${anime.random(0,100)}vh) rotate(${anime.random(0,360)}deg)`
+              document.body.append(divFigures)
 
-              divCircles.onmouseenter = function(e) {
+              divFigures.onmouseenter = function(e) {
                 let elStyle = e.target.style
                 let elWidthNum = Number(elStyle.width.slice(0,-2))
                 let elHeightNum = Number(elStyle.height.slice(0,-2))
