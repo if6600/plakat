@@ -9,6 +9,12 @@ main {
   margin: 5% 5%;
 }
 
+  width: 768px;
+  height: 1024px;
+  opacity: 20%;
+  z-index: 1;
+}
+
 .header-wrap {
   margin-top: -54px;
 }
@@ -219,6 +225,7 @@ div.plakat::after {
   width: 85px;
   transition: 100ms;
   height: 59px;
+  z-index: 79;
 }
 
 .ministar {
@@ -261,7 +268,7 @@ div.plakat::after {
 
 .ministar3 {
   position: absolute;
-  top: 400px;
+  top: 100px;
   width: 50px;
   right: 50px;
   transition: 100ms;
@@ -402,6 +409,7 @@ div.plakat::after {
   top: 80px;
   left: 300px;
   transition: 100ms;
+  z-index: 79;
 }
 
 #aura3 {
@@ -579,13 +587,13 @@ div.plakat::after {
   text-align: center;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
 
   main {
     position: relative;
-    max-width: 1024px;
-    height: 1050px;
-    margin: 8% 5%;
+    max-width: 768px;
+    height: 1024px;
+    margin: 7% 1%;
   }
 
   .header-wrap {
@@ -593,235 +601,456 @@ div.plakat::after {
   }
 
   .content {
-    margin: 8% 11%;
+    margin: 2% 1%;
   }
 
   .triangle {
     position: absolute;
     width: 0;
     height: 0;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-bottom: 20px solid black;
+    left: 70vw;
+    top: 20px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 10px solid black;
+    opacity: 40%;
+    z-index: 75;
+  }
+
+  .addrandomcircle {
+    position: absolute;
+    left: 0;
+    top: 50px;
+    z-index: 75;
   }
 
   .triangle2 {
     position: absolute;
     width: 0;
     height: 0;
-    border-left: 10px solid transparent;
-    border-right: 10px solid transparent;
-    border-bottom: 20px solid black;
+    left: -5vw;
+    top: 50px;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 10px solid black;
+    opacity: 40%;
+    z-index: 75;
   }
 
   .circlestatic {
+    position: absolute;
     width: 10px;
     height: 10px;
-    top: 80vw;
+    left: 8vw;
+    top: 87vw;
+    border-radius: 100%;
+    background-color: black;
+    opacity: 40%;
+    z-index: 75;
   }
 
   .cubestatic {
+    position: absolute;
     width: 10px;
     height: 10px;
-    top: 35vw;
-    left: 82vw;
+    left: 87vw;
+    top: 28vw;
+    background-color: black;
+    opacity: 40%;
+    z-index: 75;
   }
 
   .miniplanet {
-    width: 60px;
-    height: 40px;
-    left: 810px;
-    top: 100px;
+    position: absolute;
+    width: 35px;
+    height: 25px;
+    left: 600px;
+    top: 70px;
+    border: 2px solid black;
+    transition: 100ms;
+    z-index: 75;
+  }
+
+  .miniplanet:before {
+    content: '';
+    position: absolute;
+    display: block;
+    top: -50px;
+    left: -50px;
+    right: -50px;
+    bottom: -50px;
   }
 
   .krushochek {
-    width: 100px;
-    height: 100px;
-    left: 780px;
-    top: 550px;
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    left: 620px;
+    top: 420px;
+    transition: 100ms;
+    border-radius: 100%;
+    border: 2px solid black;
   }
 
   .krushochek2 {
-    width: 40px;
-    height: 40px;
-    left: 800px;
-    top: 570px;
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 630px;
+    top: 430px;
+    border-radius: 100%;
+    transition: 100ms;
+    border: 2px solid black;
   }
 
   .krushochek3 {
-    width: 25px;
-    height: 25px;
-    left: 750px;
-    top: 580px;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 590px;
+    top: 440px;
+    border-radius: 100%;
+    transition: 100ms;
+    background-color: black;
+    z-index: 75;
+    cursor: pointer;
   }
 
   .plakat {
+    position: relative;
     width: 800px;
     height: 900px;
   }
 
   div.plakat::after {
-    background-position: -40px -100px;
+    content: "";
+    background: url("../img/fon.png");
+    background-repeat: no-repeat;
+    background-position: -100px -180px;
+    opacity: 0.1;
+    position: absolute;
+    z-index: -1;
+  }
+
+  .theway {
+    display: none;
   }
 
   .planet {
-    top: 250px;
-    width: 340px;
-    left: 250px;
+    position: absolute;
+    top: 200px;
+    width: 270px;
+    left: 224px;
+    z-index: 75;
+    cursor: pointer;
   }
 
   .moon {
-    top: 120px;
-    width: 70px;
-    left: 60px;
+    position: absolute;
+    top: 130px;
+    width: 60px;
+    left: 50px;
+    transition: 100ms;
+    z-index: 74;
   }
 
   .krivaya {
-    top: 500px;
-    width: 100px;
+    position: absolute;
+    top: 440px;
+    width: 90px;
     left: 190px;
+    transition: 100ms;
+    z-index: 74;
   }
 
   .sputnuk {
+    position: absolute;
     top: 200px;
-    width: 100px;
-    right: -20px;
+    width: 70px;
+    left: 530px;
+    z-index: 74;
+  }
+
+  .sputnuk:before {
+    content: '';
+    position: absolute;
+    display: block;
+    top: -40px;
+    left: -40px;
+    right: -40px;
+    bottom: -40px;
   }
 
   .kletka {
-    top: 250px;
-    width: 190px;
-    left: 20px;
+    position: absolute;
+    top: 230px;
+    width: 160px;
+    left: 50px;
+    transition: 100ms;
     opacity: 40%;
+    z-index: 79;
   }
 
   .star1 {
+    position: absolute;
     top: 126px;
     left: 400px;
     width: 85px;
+    transition: 100ms;
     height: 59px;
   }
 
   .ministar {
-    top: 630px;
-    width: 100px;
-    left: 0;
+    position: absolute;
+    top: 500px;
+    width: 80px;
+    left: 18px;
+    transition: 100ms;
+    z-index: 78;
+  }
+
+  .ministar:before {
+    content: '';
+    position: absolute;
+    display: block;
+    top: -50px;
+    left: -50px;
+    right: -50px;
+    bottom: -50px;
   }
 
   .ministar2 {
-    top: 120px;
-    width: 80px;
-    right: 100px;
+    position: absolute;
+    top: 110px;
+    width: 60px;
+    right: 230px;
+    transition: 100ms;
+    z-index: 78;
+  }
+
+  .ministar2:before {
+    content: '';
+    position: absolute;
+    display: block;
+    top: -50px;
+    left: -50px;
+    right: -50px;
+    bottom: -50px;
   }
 
   .ministar3 {
-    top: 380px;
-    width: 110px;
-    right: 40px;
+    position: absolute;
+    top: 300px;
+    width: 80px;
+    right: 150px;
+    transition: 100ms;
+    z-index: 78;
+  }
+
+  .ministar3:before {
+    content: '';
+    position: absolute;
+    display: block;
+    top: -50px;
+    left: -50px;
+    right: -50px;
+    bottom: -50px;
   }
 
   .krugst {
-    top: 780px;
-    width: 140px;
-    left: 150px;
+    position: absolute;
+    top: 570px;
+    width: 110px;
+    left: 180px;
     opacity: 50%;
+    transition: 100ms;
+    z-index: 78;
+    cursor: pointer;
   }
 
   .sferast {
-    top: 840px;
-    left: 200px;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: black;
+    border-radius: 100%;
+    top: 620px;
+    left: 220px;
+    transition: 100ms;
+    z-index: 79;
+    cursor: pointer;
   }
 
   .linesst {
-    top: 715px;
-    width: 180px;
-    left: 230px;
+    position: absolute;
+    top: 510px;
+    width: 130px;
+    left: 260px;
+    transition: 100ms;
+    z-index: 79;
+    cursor: pointer;
   }
 
   .curve {
-    top: 590px;
-    width: 150px;
-    left: 50px;
+    position: absolute;
+    top: 480px;
+    width: 110px;
+    left: 55px;
+    z-index: 79;
   }
 
   .cube {
-    width: 55px;
-    height: 55px;
+    position: absolute;
+    width: 45px;
+    height: 45px;
     border: 2px solid black;
-    bottom: 190px;
-    right: 200px;
+    top: 540px;
+    right: 260px;
+  }
+
+  .cube:before {
+    content: '';
+    position: absolute;
+    display: block;
+    top: -50px;
+    left: -10px;
+    right: -50px;
+    bottom: -50px;
   }
 
   .cube2 {
+    position: absolute;
     width: 30px;
     height: 30px;
     border: 1px solid black;
-    bottom: 320px;
-    right: 300px;
+    top: 460px;
+    right: 350px;
+    transition: 100ms;
+    z-index: 96;
+  }
+
+  .cube2:before {
+    content: '';
+    position: absolute;
+    display: block;
+    top: -40px;
+    left: -40px;
+    right: -20px;
+    bottom: -40px;
   }
 
   #lineleft {
-    width: 80px;
-    border: 1px solid black;
+    position: absolute;
+    width: 60px;
+    border: 0.5px solid black;
     transform: rotate(30deg);
-    top: 17px;
-    left: 40px;
+    top: 0px;
+    left: -50px;
+    transition: 100ms;
+    z-index: 95;
   }
 
   #lineright {
-    width: 90px;
-    border: 1px solid black;
+    position: absolute;
+    width: 70px;
+    border: 0.5px solid black;
     transform: rotate(-50deg);
-    top: 17px;
+    top: 0px;
+    left: -40px;
   }
 
   #circle {
-    width: 20px;
-    height: 20px;
-    top: 30px;
-    left: 53px;
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+    background-color: black;
+    top: 20px;
+    left: -15px;
   }
 
   .star2 {
-    width: 80px;
-    height: 80px;
+    position: absolute;
+    width: 100px;
+    height: 100px;
     top: 80px;
-    left: 300px;
+    left: 210px;
+    transition: 100ms;
   }
 
   #aura3 {
-    width: 80px;
-    height: 80px;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    border: 1px solid black;
     top: 0;
-    left: -50px;
+    left: 0;
+    transition: 100ms;
+    z-index: 92;
+    cursor: pointer;
   }
 
   #aura2 {
-    width: 50px;
-    height: 50px;
-    top: 15px;
-    left: -34px;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    border: 1px solid black;
+    top: 10px;
+    left: 10px;
+    transition: 100ms;
+    z-index: 91;
+    cursor: pointer;
   }
 
   #aura1 {
+    position: absolute;
     width: 20px;
     height: 20px;
-    top: 30px;
-    left: -19px;
+    border-radius: 100%;
+    border: 1px solid black;
+    top: 20px;
+    left: 20px;
+    transition: 100ms;
+    z-index: 89;
+    cursor: pointer;
+  }
+
+  .zvezda {
+    position: absolute;
+    display: none;
+    z-index: 88;
   }
 
   .krug1 {
-    width: 40px;
-    height: 40px;
-    bottom: 70px;
-    left: 710px;
+    position: absolute;
+    width: 33px;
+    height: 33px;
+    border-radius: 100%;
+    background-color: black;
+    top: 630px;
+    left: 620px;
   }
 
   .krug2 {
+    position: absolute;
     width: 30px;
     height: 30px;
-    top: 5px;
-    left: 690px;
+    border-radius: 100%;
+    border: 1px solid black;
+    top: 0px;
+    left: 400px;
+  }
+
+  .krug2:before {
+    content: '';
+    position: absolute;
+    display: block;
+    top: -30px;
+    left: -50px;
+    right: -50px;
+    bottom: -30px;
   }
 
   .curvedashed-wrap {
@@ -829,43 +1058,78 @@ div.plakat::after {
     height: 120px;
     top: 220px;
     left: 470px;
+    position: absolute;
+    z-index: 86;
   }
 
   #curvedashed {
-    width: 140px;
+    position: absolute;
+    width: 100px;
     border: 2px dashed black;
     transform: rotate(-35deg);
-    top: 120px;
-    left: 30px;
+    top: 100px;
+    left: -30px;
+    transition: 100ms;
+    z-index: 86;
+  }
+
+  #curvedashed:before {
+    content: '';
+    position: absolute;
+    display: block;
+    top: -40px;
+    left: -40px;
+    right: -40px;
+    bottom: -40px;
   }
 
   .littlecube {
+    position: absolute;
     width: 20px;
     height: 20px;
-    border: 2px solid black;
-    top: 300px;
-    left: 130px;
+    border: 1px solid black;
+    top: 275px;
+    left: 140px;
+    transition: 100ms;
+    z-index: 85;
+  }
+
+  .littlecube:before {
+    content: '';
+    position: absolute;
+    display: block;
+    top: -35px;
+    left: -35px;
+    right: -35px;
+    bottom: -35px;
+  }
+
+  .fon {
+    position: absolute;
+    opacity: 8%;
+    z-index: 80;
   }
 
   .podzagolovok {
-    font-size: 4vw;
+    font-size: 4.5vw;
     margin-left: 1vw;
   }
 
   .zagolovok {
-    font-size: 15vw;
-    line-height: 10vw;
+    font-size: 13vw;
+    line-height: 8vw;
   }
 
   .cost {
-    font-size: 4vw;
-    line-height: 5vw;
+    font-size: 3vw;
+    line-height: 4vw;
+    -webkit-text-stroke-width: 0.7px;
   }
 
   .info {
-    padding-top: 1200px;
-    font-size: 2.7vw;
-    width: 50vw;
+    padding-top: 1650px;
+    font-size: 2.5vw;
+    width: 45vw;
   }
 
   #cost {
@@ -874,10 +1138,10 @@ div.plakat::after {
 
   .description {
     -ms-transform: translateX(-50%);
-    left: 47%;
-    top: 15%;
+    left: 30%;
+    top: -76%;
     transform: translateX(-50%);
-    line-height: 3.5vw;
+    line-height: 3vw;
   }
 
 }
