@@ -9,6 +9,8 @@ main {
   margin: 5% 5%;
 }
 
+.block {
+  position: absolute;
   width: 768px;
   height: 1024px;
   opacity: 20%;
